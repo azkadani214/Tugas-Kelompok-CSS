@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .navigation a {
+            position: relative;
+            font-size: 1.1rem;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 40px;
+        }
+
+        .navigation a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 100%;
+            height: 3px;
+            background: #fff;
+            border-radius: 5px;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .5s;
+        }
+
+        .navigation a:hover::after {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+    </style>
+
+<body style=" margin: 0px;
+padding: 0px;
+font-family: 'Open Sans', sans-serif;
+background-color: #475364;">
+    <header style="position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;">
+        <h2 style="font-size: 2rem;
+        color: #ffffff;
+        user-select: none; ">Dakwah.</h2>
+        <nav class="navigation" style="position: relative;
+        font-size: 1.1rem;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 40px;">
+            <a href="/index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <br><br><br><br>
+
+    <h1 style=" width: 100%;
+    text-align: center;
+    font-size: 3.5em;
+    color: #1f003b;">Contact</h1><br>
+    <form action="#">
+        <fieldset>
+            <label for="email"> <b>Email</b></label> <br>
+            <input type="email" placeholder="Enter email" required><br> <br>
+            <label for="pesan"><b>Pesan</b></label> <br>
+            <textarea name="pesan" id="pesan" cols="100" rows="7" placeholder="Kirim Komentar kalian"
+                required></textarea> <br>
+            <button> Submit </button> <br>
+        </fieldset>
+    </form>
+
+    <div align="center" style="color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;">created by <span style=" color: #d3ad7f;">kelompok 5.</span>All rights reserved</div>
+</body>
+
+</html>

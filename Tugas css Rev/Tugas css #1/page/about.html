@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ed18e490bd.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #475364;
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 99;
+        }
+
+        .logo {
+            font-size: 2rem;
+            color: #ffffff;
+            user-select: none;
+        }
+
+        .navigation a {
+            position: relative;
+            font-size: 1.1rem;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 40px;
+        }
+
+        .navigation a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 100%;
+            height: 3px;
+            background: #fff;
+            border-radius: 5px;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .5s;
+        }
+
+        .navigation a:hover::after {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2em 1em;
+            text-align: center;
+        }
+
+        .column {
+            width: 100%;
+            padding: 0.5em 0;
+        }
+
+        h1 {
+            width: 100%;
+            text-align: center;
+            font-size: 3.5em;
+            color: #1f003b;
+        }
+
+        .card {
+            width: 100%;
+            /* box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1); */
+            padding: 3.5em 1em;
+            border-radius: 0.6em;
+            color: #1f003b;
+            cursor: pointer;
+            transition: 0.3s;
+            /* background-color: #ffffff; */
+        }
+
+        .card .img-container {
+            width: 8em;
+            height: 8em;
+            background-color: #a993ff;
+            padding: 0.5em;
+            border-radius: 50%;
+            margin: 0 auto 2em auto;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .card h3 {
+            font-weight: 500;
+        }
+
+        .card p {
+            font-weight: 300;
+            text-transform: uppercase;
+            margin: 0.5em 0 2em 0;
+            letter-spacing: 2px;
+        }
+
+        .icons {
+            width: 50%;
+            min-width: 180px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 1.4em;
+        }
+
+        .card:hover {
+            background: linear-gradient(#6045ea, #8567f7);
+            color: #ffffff;
+        }
+
+        .card:hover .img-container {
+            transform: scale(1.15);
+        }
+
+        @media screen and (min-width: 768px) {
+            section {
+                padding: 1em 7em;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            section {
+                padding: 1em;
+            }
+
+            .card {
+                padding: 5em 1em;
+            }
+
+            .column {
+                flex: 0 0 33.33%;
+                max-width: 33.33%;
+                padding: 0 1em;
+            }
+        }
+
+        .credit {
+            color: #fff;
+            font-weight: lighter;
+            
+        }
+
+        .credit span {
+            color: #d3ad7f;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Dakwah.</h2>
+        <nav class="navigation">
+            <a href="/index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section>
+        <div class="row">
+            <h1>Our Team</h1>
+        </div>
+        <div class="row">
+            <!-- Column 1-->
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="../img/azka.jpeg" />
+                    </div>
+                    <h3>Dharmazka Arsyadani </h3>
+                    <p>Rekayasa Perangkat Lunak</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/dharmazkaar " target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com/@dharmazkaarsyadani69" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/6283896160422 " target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 2-->
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="../img/eka.jpeg" />
+                    </div>
+                    <h3>Eka Yunita</h3>
+                    <p>Rekayasa Perangkat Lunak</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/_ekaaynita?igshid=ZDdkNTZiNTM=" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@_ekaaayunitaa_?_t=8angxgcQ0jB&_r=1" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/6282230224869" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 3-->
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="../img/dewa.jpg" />
+                    </div>
+                    <h3>Dewa Raditya R.</h3>
+                    <p>Rekayasa Perangkat Lunak</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/dewaradtya/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/6281332611178" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 4-->
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="../img/igede.jpeg" />
+                    </div>
+                    <h3>I Gede Dava P.E</h3>
+                    <p>Rekayasa Perangkat Lunak</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/igededavape?igshid=ZDdkNTZiNTM=" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@dava2747?_t=8anjPHGeL9m&_r=1" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 5-->
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="../img/ratna.jpeg" />
+                    </div>
+                    <h3>Ratna Paramita</h3>
+                    <p>Rekayasa Perangkat Lunak</p>
+                    <div class="icons">
+                        <a href="https://twitter.com/JVerallyn?t=_74qnSi5pTSe8GhWwtn8iA&s=09" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/ratna.prmtaa?igshid=YmMyMTA2M2Y=" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/qr/JPIR4JR4VBSCF1" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 6-->
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="../img/alif.jpg" />
+                    </div>
+                    <h3>Nicky Alief W.P</h3>
+                    <p>Rekayasa Perangkat Lunak</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="http://www.instagram.com/nicky_alief/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/6285739226484" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div align="center" class="credit">created by <span>Team 5</span> All rights reserved</div>
+    </section>
+</body>
+</html>
